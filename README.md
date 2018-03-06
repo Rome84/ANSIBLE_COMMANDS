@@ -21,5 +21,5 @@ on all selected remote hosts at one go, for example watch out few examples shown
 #  If we need the output to any file we can redirect as below.
   ansible -m command -a "df -h" web-servers > /tmp/df_outpur.txt
 
-Manually flushing controller's redis cache
+# Manually flushing controller's redis cache
 ansible localhost -m redis -a "command=flush flush_mode=all" -c local
